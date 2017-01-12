@@ -1,3 +1,7 @@
+* {
+  border: 1px black solid;
+}
+
 p {
   color: red;
 }
