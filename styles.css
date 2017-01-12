@@ -1,6 +1,6 @@
-* {
+/** {
   border: 1px black solid;
-}
+}*/
 
 p {
   color: red;
@@ -8,4 +8,25 @@ p {
 
 .nav-wrapper {
   background-color: #03a9f4;
+}
+
+#home1 {
+  background-image:url('/images/business1.jpg');
+  /*background-attachment: fixed;*/
+  background-position: center;
+  background-size: cover;
+  /*height: 100%;*/
+  display: inline;
+  min-height: 800px;
+}
+
+#home2 {
+  background-image:url('/images/user1.jpg');
+  /*background-attachment: fixed;*/
+  background-position: center;
+  background-size: cover;
+  /*height: 100%;*/
+  /*display: inline;*/
+  min-height: 800px;
+
 }
