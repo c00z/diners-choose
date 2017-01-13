@@ -14,6 +14,13 @@ p {
   background-color:black;
 }
 
+.userpagelogin {
+  background-image:url('/images/userlogin.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 800px;
+}
+
 #home1 {
   background-image:url('/images/business1.jpg');
   background-position: center;
@@ -29,6 +36,7 @@ p {
   min-height: 800px;
 }
 
+/* buttons on home pages*/
 #herobutton {
     background-color: #8bc34a;
     margin: 300px -50px;
@@ -38,6 +46,7 @@ p {
     border-radius: 10px;
 }
 
+/*spaces card from top*/
 #logins {
   margin-top: 50px;
 }
