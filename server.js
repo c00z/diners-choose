@@ -28,6 +28,15 @@ app.use(function(req, res, next) {
  * ROUTES *
  **********/
 
+ app.use(express.static('templates'));
+
+ /*
+  * HTML Endpoints
+  */
+
+ app.get('/', function homepage(req, res) {
+     res.sendFile(__dirname + 'home.html');
+ });
 
 
 
