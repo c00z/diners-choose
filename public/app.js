@@ -24,39 +24,42 @@ config.$inject = ['$routeProvider', '$locationProvider'];
 function config (  $routeProvider,   $locationProvider  )  {
   $routeProvider //below is dot chaining
     .when('/', {  //when on this url go to the below url and use these controllers
-      templateUrl: 'templates/home.html',  // this "partial" html file
+      templateUrl: '/templates/home.html',  // this "partial" html file
       controller: 'HomeController',         // uses this controller
       controllerAs: 'homeCtrl'              // with this name
     })
     .when('/rest_signup', {
-      templateUrl: 'templates/restlogin.html',
+      templateUrl: '/templates/restlogin.html',
       controller: 'LoginController',
       controllerAs: 'loginCtrl'
     })
     .when('/user_signup', {
-      templateUrl: 'templates/userlogin.html',
+      templateUrl: '/templates/userlogin.html',
       controller: 'LoginController',
       controllerAs: 'loginCtrl'
     })
     .when('/restaurants', {
-      templateUrl: 'templates/restindex.html',
+      templateUrl: '/templates/restindex.html',
       controller: 'RestIndexController',
       controllerAs: 'restIndexCtrl'
     })
     .when('/restaurants/:id', {
-      templateUrl: 'templates/restshow.html',
+      templateUrl: '/templates/restshow.html',
       controller: 'RestShowController',
       controllerAs: 'restShowCtrl'
     })
     .when('/dashboard', {
-      templateUrl: 'templates/restdash.html',
+      templateUrl: '/templates/restdash.html',
       controller: 'RestDashController',
       controllerAs: 'restDashCtrl'
     })
     .when('/rest_add', {
-      templateUrl: 'templates/restadd.html',
+      templateUrl: '/templates/restadd.html',
       controller: 'RestAddController',
       controllerAs: 'restAddCtrl'
+    })
+    .when('/about', {
+      templateUrl: '/templates/about.html',
     })
     .otherwise({  //if unrecoginized URL, set back to index
       redirectTo: '/'

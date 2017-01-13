@@ -77,3 +77,8 @@ p {
     color: rgb(220, 220, 220);
     display: block;
 }
+#sidenav a:hover {
+  text-decoration: none;
+    color: black;
+    background-color: #2196f3;
+}

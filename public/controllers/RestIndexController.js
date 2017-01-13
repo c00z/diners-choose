@@ -51,7 +51,10 @@ function RestIndexController($http, $routeParams, $location) {
       lat: 37.761006,
       lng: -122.421652
     }
-}
+}]
 
-]
+
+
+
+
 }

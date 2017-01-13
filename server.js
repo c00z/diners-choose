@@ -28,18 +28,22 @@ app.use(function(req, res, next) {
  * ROUTES *
  **********/
 
- app.use(express.static('templates'));
+ app.use(express.static(__dirname + '/public'));
 
  /*
   * HTML Endpoints
   */
 
  app.get('/', function homepage(req, res) {
-     res.sendFile(__dirname + 'home.html');
+     res.sendFile(__dirname + '/views/index.html');
  });
 
 
 
+
+ app.get('*', function homepage (req, res) {
+  res.sendFile(__dirname + '/views/index.html');
+ });
 
 
  /**********

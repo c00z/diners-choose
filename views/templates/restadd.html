@@ -1,43 +1,44 @@
-<p>RESTAURANT ADD FORM </p>
+<h4>RESTAURANT ADD FORM </h4>
 
+<div class="container">
   <div class="row">
           <div class="col-md-10 col-md-offset-1">
 
-            <form class="form-horizontal" ng-submit="booksIndexCtrl.createBook()">
+            <form class="form-horizontal" ng-submit="restAddCtrl.createRestaurant()">
               <fieldset>
 
                 <!-- Form Name -->
-                <legend>Add New Book</legend>
+                <!-- <legend>Add New Book</legend> -->
 
                 <!-- Text input-->
                 <div class="form-group">
-                  <label class="col-md-4 control-label">Title</label>
+                  <label class="col-md-4 control-label">Name</label>
                   <div class="col-md-4">
-                  <input ng-model="booksIndexCtrl.newBook.title" type="text" class="form-control input-md">
+                  <input ng-model="restAddCtrl.newRestaurant.name" type="text" class="form-control input-md">
                   </div>
                 </div>
 
                 <!-- Text input-->
                 <div class="form-group">
-                  <label class="col-md-4 control-label">Author</label>
+                  <label class="col-md-4 control-label">Description</label>
                   <div class="col-md-4">
-                  <input ng-model="booksIndexCtrl.newBook.author" type="text" class="form-control input-md">
+                  <input ng-model="restAddCtrl.newRestaurant.description" type="text" class="form-control input-md">
                   </div>
                 </div>
 
                 <!-- Text input-->
                 <div class="form-group">
-                  <label class="col-md-4 control-label">Release Date</label>
+                  <label class="col-md-4 control-label">Address</label>
                   <div class="col-md-4">
-                  <input ng-model="booksIndexCtrl.newBook.releaseDate" type="text" class="form-control input-md">
+                  <input ng-model="restAddCtrl.newRestaurant.location" type="text" class="form-control input-md">
                   </div>
                 </div>
 
                 <!-- Textarea -->
                 <div class="form-group">
-                  <label class="col-md-4 control-label">Image URL</label>
+                  <label class="col-md-4 control-label">URL</label>
                   <div class="col-md-4">
-                    <input ng-model="booksIndexCtrl.newBook.image" type="text" class="form-control input-md">
+                    <input ng-model="restAddCtrl.newRestaurant.url" type="text" class="form-control input-md">
                   </div>
                 </div>
 
@@ -46,7 +47,7 @@
                 <!-- <div class="form-group"> -->
                   <!-- <label class="col-md-4 control-label">Save</label> -->
                   <div class="col-md-4 col-md-offset-4">
-                    <button class="btn btn-warning">Submit</button>
+                    <button ng-href="dashboard" class="btn btn-warning">Submit</button>
 
                   </div>
                 <!-- </div> -->
@@ -54,3 +55,4 @@
             </form>
           </div>
       </div>
+    </div>
