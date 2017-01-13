@@ -18,6 +18,7 @@ angular.module('dinerApp', ['ngRoute', 'ui.materialize'])
 // ROUTES //
 ////////////
 
+
 //injecting two different providers
 config.$inject = ['$routeProvider', '$locationProvider'];
 function config (  $routeProvider,   $locationProvider  )  {
