@@ -53,6 +53,11 @@ function config (  $routeProvider,   $locationProvider  )  {
       controller: 'RestDashController',
       controllerAs: 'restDashCtrl'
     })
+    .when('/rest_add', {
+      templateUrl: 'templates/restadd.html',
+      controller: 'RestAddController',
+      controllerAs: 'restAddCtrl'
+    })
     .otherwise({  //if unrecoginized URL, set back to index
       redirectTo: '/'
     });
