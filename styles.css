@@ -1,7 +1,63 @@
-* {
+/** {
   border: 1px black solid;
-}
+}*/
 
 p {
   color: red;
+}
+
+.nav-wrapper {
+  background-color: #212121;
+}
+
+.userlogin {
+  background-color:black;
+}
+
+.userpagelogin {
+  background-image:url('/images/userlogin.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 800px;
+}
+
+.restpagelogin {
+  background-image:url('/images/restloginpage.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 800px;
+}
+
+.brandlogo {
+  font-family: 'Josefin Slab', serif;
+}
+
+#home1 {
+  background-image:url('/images/business1.jpg');
+  background-position: center;
+  background-size: cover;
+  display: inline;
+  min-height: 800px;
+}
+
+#home2 {
+  background-image:url('/images/user1.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 800px;
+}
+
+/* buttons on home pages*/
+#herobutton {
+    background-color: #8bc34a;
+    margin: 300px -50px;
+    position:relative;
+    top:50%;
+    left:50%;
+    border-radius: 10px;
+}
+
+/*spaces card from top*/
+#logins {
+  padding-top: 70px;
 }
