@@ -4,13 +4,11 @@
 
 
 
-<input type="text" class="form-control" ng-model="searchText" placeholder="Search Restaurants">
-<div ng-repeat="restaurant in restIndexCtrl.newrestaurant | orderBy: 'name' | filter: searchText" class="row">
+<!-- <input type="text" class="form-control" ng-model="searchText" placeholder="Search Restaurants"> -->
+<div ng-repeat="restaurant in restIndexCtrl.newRestaurant | orderBy: 'name' | filter: searchText" class="row">
 
 
 <hr>
-<!-- Book display information -->
-  <!-- <div class="row"> -->
 
     <div class="col-md-3 col-xs-12 thumbnail">
       <img class="img-responsive col-m-4" ng-src={{restaurant.image}} alt="Book image">
