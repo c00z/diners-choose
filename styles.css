@@ -12,21 +12,16 @@ p {
 
 #home1 {
   background-image:url('/images/business1.jpg');
-  /*background-attachment: fixed;*/
   background-position: center;
   background-size: cover;
-  /*height: 100%;*/
   display: inline;
   min-height: 800px;
 }
 
 #home2 {
   background-image:url('/images/user1.jpg');
-  /*background-attachment: fixed;*/
   background-position: center;
   background-size: cover;
-  /*height: 100%;*/
-  /*display: inline;*/
   min-height: 800px;
 }
 
@@ -36,4 +31,5 @@ p {
     position:relative;
     top:50%;
     left:50%;
+    border-radius: 10px;
 }
