@@ -53,5 +53,4 @@ function RestIndexController($http, $routeParams, $location) {
     }
 }
 
-]
-}
+]}
