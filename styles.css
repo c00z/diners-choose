@@ -28,6 +28,10 @@ p {
   min-height: 800px;
 }
 
+.brandlogo {
+  font-family: 'Josefin Slab', serif;
+}
+
 #home1 {
   background-image:url('/images/business1.jpg');
   background-position: center;
