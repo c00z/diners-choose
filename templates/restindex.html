@@ -1,24 +1,19 @@
-<h1>{{restIndexCtrl.newRestaurant.name}}</h1>
-<h3>{{restIndexCtrl.newRestaurant.description}}</h3>
-<h3>{{restIndexCtrl.newRestaurant.url}}</h3>
-
-
-
-<!-- <input type="text" class="form-control" ng-model="searchText" placeholder="Search Restaurants"> -->
+<h1> Restuarant List </h1>
+<input type="text" class="form-control" ng-model="searchText" placeholder="Search Restaurants">
 <div ng-repeat="restaurant in restIndexCtrl.newRestaurant | orderBy: 'name' | filter: searchText" class="row">
 
 
 <hr>
-
+<div class="container">
     <div class="col-md-3 col-xs-12 thumbnail">
-      <img class="img-responsive col-m-4" ng-src={{restaurant.image}} alt="Book image">
+      <img class="img-responsive col-m-4" ng-src={{restaurant.image}} alt="Restaurant image">
     </div>
 
     <div class="col-md-9 col-xs-12">
         <ul class="list-group form-inline">
           <li class="list-group-item">
-            <h5 class="inline-header">Description:</h5>
-            <span> <a ng-href="/restaurants/{{restaurant._id}}">{{restaurant.name}}</span></a>
+            <h5 class="inline-header">Name:</h5>
+            <span> <a ng-href="/restaurants/{{restaurant.name}}">{{restaurant.name}}</span></a>
             <h5 class="inline-header">Author:</h5>
             <span>{{restaurant.name}}</span>
             <h5 class="inline-header">Release:</h5>
@@ -28,3 +23,4 @@
     </div>
 
   </div>
+</div>
