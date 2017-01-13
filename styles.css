@@ -21,6 +21,13 @@ p {
   min-height: 800px;
 }
 
+.restpagelogin {
+  background-image:url('/images/restloginpage.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 800px;
+}
+
 #home1 {
   background-image:url('/images/business1.jpg');
   background-position: center;
@@ -48,5 +55,5 @@ p {
 
 /*spaces card from top*/
 #logins {
-  margin-top: 50px;
+  padding-top: 70px;
 }
