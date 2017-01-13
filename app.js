@@ -48,6 +48,11 @@ function config (  $routeProvider,   $locationProvider  )  {
       controller: 'RestShowController',
       controllerAs: 'restShowCtrl'
     })
+    .when('/dashboard', {
+      templateUrl: 'templates/restdash.html',
+      controller: 'RestDashController',
+      controllerAs: 'restDashCtrl'
+    })
     .otherwise({  //if unrecoginized URL, set back to index
       redirectTo: '/'
     });
