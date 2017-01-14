@@ -27,23 +27,41 @@
         <div class="col s12 m8 l9">
           <!-- Landing dashboard. Add a new! -->
           <div class="row" ng-hide="dashboard">
-            <div class="col s6 offset-s6">
-              <span class="flow-text">Update your listing!</span>
-              <a ng-href="rest_add" class="waves-effect waves-light btn-large" id="addbutton"><i class="material-icons left">receipt</i>FEED</a>
-            </div>
+            <div class="row">
+
+              <div class="col s4">
+                <i class="large material-icons">toc</i>
+                  <h4>List your Restaurant!</h4>
+              </div>
+              <div class="col s4">
+                <i class="large material-icons">receipt</i>
+                <h4>Check Orders</h4>
+              </div>
+              <div class="col s4">
+                <i class="large material-icons">loyalty</i>
+                <h4>Your Impact</h4>
+              </div>
+
           </div>
 
+          </div>
+
+          <!-- Landing dashboard. Add a new! -->
           <div class="row" ng-show="dashboard" ng-hide="!dashboard">
-            <div class="col s6 offset-s6">
-              <span class="flow-text">TEMP DASH BOARD</span>
+            <div class="container">
+              <div class="row">
+                 <div class="col s12">This div is 12-columns wide</div>
+                 <div class="col s6">This div is 6-columns wide</div>
+                 <div class="col s6">This div is 6-columns wide</div>
+                 <div class="row">
+                  <div class="col s6 pull-s7">TMERcolumns wide</div>
+
+
+               </div>
             </div>
           </div>
 
-          <div class="row" ng-show="orders">
-            <div class="col s6 offset-s6">
-              <span class="flow-text">TEMP ORDERS</span>
-            </div>
-          </div>
+
 
 
 
