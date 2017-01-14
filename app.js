@@ -50,13 +50,23 @@ function config (  $routeProvider,   $locationProvider  )  {
     })
     .when('/dashboard', {
       templateUrl: 'templates/restdash.html',
-      controller: 'RestDashController',
-      controllerAs: 'restDashCtrl'
+      // controller: 'RestDashController',
+      // controllerAs: 'restDashCtrl'
     })
     .when('/rest_add', {
       templateUrl: 'templates/restadd.html',
       controller: 'RestAddController',
       controllerAs: 'restAddCtrl'
+    })
+    .when('/about', {
+      templateUrl: 'templates/about.html',
+      // controller: 'RestAddController',
+      // controllerAs: 'restAddCtrl'
+    })
+    .when('/contact', {
+      templateUrl: 'templates/contact.html',
+      // controller: 'RestAddController',
+      // controllerAs: 'restAddCtrl'
     })
     .otherwise({  //if unrecoginized URL, set back to index
       redirectTo: '/'

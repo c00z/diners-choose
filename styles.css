@@ -83,3 +83,14 @@ p {
     color: black;
     background-color: #2196f3;
 }
+
+/*button inside of rest dashboard*/
+
+#addbutton {
+    background-color: #8bc34a;
+    /*margin: 300px -50px;*/
+    position:relative;
+    /*top:50%;
+    left:50%;*/
+    border-radius: 10px;
+}
