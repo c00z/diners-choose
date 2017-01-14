@@ -1,6 +1,6 @@
-* {
+/** {
   border: 1px black solid;
-}
+}*/
 
 p {
   color: red;
@@ -30,6 +30,12 @@ p {
 
 .brandlogo {
   font-family: 'Josefin Slab', serif;
+}
+
+/* 3 icons on dashboard */
+.promotion{
+  margin: 100px;
+  text-align: center;
 }
 
 #home1 {
