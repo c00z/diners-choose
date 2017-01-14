@@ -6,7 +6,7 @@ RestIndexController.$inject=['$http','$routeParams', '$location'];
 function RestIndexController($http, $routeParams, $location) {
   var vm = this;
   vm.newRestaurant = {};
-  vm.newRestaurant = {
+  vm.newRestaurant = [{
     name: 'Shizen',
     description: 'Vegan Sushi Bar and Izakaya',
     address: '370 14th St, San Francisco, CA 94103',
@@ -53,4 +53,4 @@ function RestIndexController($http, $routeParams, $location) {
     }
 }
 
-}
+]}

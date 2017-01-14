@@ -61,3 +61,36 @@ p {
 #logins {
   padding-top: 70px;
 }
+
+#sidenav {
+  color:white;
+  background-color: #424242;
+  min-height: 750px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 2.2em;
+    color: rgb(220, 220, 220);
+    display: block;
+}
+
+#sidenav a:hover {
+  text-decoration: none;
+    color: black;
+    background-color: #2196f3;
+}
+
+/*button inside of rest dashboard*/
+
+#addbutton {
+    background-color: #8bc34a;
+    /*margin: 300px -50px;*/
+    position:relative;
+    /*top:50%;
+    left:50%;*/
+    border-radius: 10px;
+}
