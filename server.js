@@ -28,10 +28,14 @@ app.use(function(req, res, next) {
  * ROUTES *
  **********/
 
+ // app.use(express.static(__dirname + '/public'));
+
+ // app.use('/vendor', express.static(__dirname + '/bower_components'));
 
 
-
-
+ // app.get('*', function homepage (req, res) {
+ //   res.sendFile(__dirname + '/views/index.html');
+ // });
 
  /**********
  * SERVER *
