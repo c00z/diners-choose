@@ -1,6 +1,6 @@
 console.log('Sanity Check');
 
-angular.module('dinerApp', ['ngRoute', 'jkAngularRatingStars', 'ui.materialize'])
+angular.module('dinerApp', ['ngRoute', 'ui.materialize'])
        .config(config);
 
 
