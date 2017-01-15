@@ -1,6 +1,21 @@
-<h1> Restuarant List </h1>
-<input type="text" class="form-control" ng-model="searchText" placeholder="Search Restaurants">
+<div class="navbar-fixed">
+<nav>
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo">&nbsp;mealMatch</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="restaurants">Restaurants</a></li>
+      <li><a href="/">Support</a></li>
+      <li><a href="/">Log Out</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+<br>
+<div class="container">
+<input type="text" class="form-control"  ng-model="searchText" placeholder="Search Restaurants">
 <div ng-repeat="restaurant in restIndexCtrl.newRestaurant | orderBy: 'name' | filter: searchText" class="row">
+
+
 
 
 <hr>
@@ -18,9 +33,11 @@
             <span>{{restaurant.description}}</span>
             <h5 class="inline-header">url:</h5>
             <span>{{restaurant.url}}</span>
+            <jk-rating-stars max-rating="8" rating="ctrl.rating" read-only="ctrl.readOnly" on-rating="ctrl.onRating(rating)"></jk-rating-stars>
           </li>
         </ul>
     </div>
 
   </div>
+</div>
 </div>
