@@ -33,6 +33,7 @@
             <span>{{restaurant.description}}</span>
             <h5 class="inline-header">url:</h5>
             <span>{{restaurant.url}}</span>
+            <jk-rating-stars max-rating="8" rating="ctrl.rating" read-only="ctrl.readOnly" on-rating="ctrl.onRating(rating)"></jk-rating-stars>
           </li>
         </ul>
     </div>
