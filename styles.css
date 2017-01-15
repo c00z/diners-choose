@@ -30,6 +30,7 @@ p {
 
 .brandlogo {
   font-family: 'Josefin Slab', serif;
+  text-decoration: none;
 }
 
 /* 3 icons on dashboard */
