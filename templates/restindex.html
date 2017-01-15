@@ -1,7 +1,10 @@
+
 <h1> Restuarant List </h1>
 <div class="container">
-<input type="text" class="form-control" ng-model="searchText" placeholder="Search Restaurants">
+<input type="text" class="form-control"  ng-model="searchText" placeholder="Search Restaurants">
 <div ng-repeat="restaurant in restIndexCtrl.newRestaurant | orderBy: 'name' | filter: searchText" class="row">
+
+
 
 
 <hr>
