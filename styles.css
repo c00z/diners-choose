@@ -1,6 +1,6 @@
-/** {
+* {
   border: 1px black solid;
-}*/
+}
 
 p {
   color: red;
@@ -103,5 +103,10 @@ p {
 }
 
 #dashicon {
-  color: #e57373;
+  color: #ef5350;
+}
+
+#dashicon:hover {
+  color: #8bc34a;
+
 }
