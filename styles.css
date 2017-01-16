@@ -103,5 +103,22 @@ p {
 }
 
 #dashicon {
-  color: #e57373;
+  color: #ef5350;
+}
+
+#dashicon:hover {
+  color: #2196f3;
+}
+
+#aboutpage {
+  background-image:url('/images/business2.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+#foodbank {
+  height: 100px;
+  width: 100px;
+  position: center;
 }
