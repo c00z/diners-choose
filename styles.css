@@ -1,6 +1,6 @@
-* {
+/** {
   border: 1px black solid;
-}
+}*/
 
 p {
   color: red;
@@ -108,5 +108,17 @@ p {
 
 #dashicon:hover {
   color: #8bc34a;
+}
 
+#aboutpage {
+  background-image:url('/images/business2.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+#foodbank {
+  height: 100px;
+  width: 100px;
+  position: center;
 }
