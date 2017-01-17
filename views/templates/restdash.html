@@ -18,7 +18,7 @@
           <a href="#">Reports</a>
           <a href="#">Settings</a>
           <a href="rest_add">Add</a>
-          <a href="#">Impact</a>
+          <a href="impact">Impact</a>
           <hr>
           <h5>&nbsp;&nbsp;Our Partners</h5>
           <hr>
@@ -43,7 +43,7 @@
                 <!-- <h6>Filler content about stuff and things</h6> -->
               </div>
               <div class="col s4">
-                <i class="large material-icons" id="dashicon">loyalty</i>
+              <a href="impact"><i class="large material-icons" id="dashicon">loyalty</i></a>
                 <h4>Impact</h4>
                 <!-- <h6>Filler content about stuff and things</h6> -->
               </div>
@@ -53,7 +53,7 @@
           </div>
 
           <!-- Landing dashboard. Add a new! -->
-          <div class="row" ng-show="dashboard" ng-hide="orders ||">
+          <div class="row" ng-show="dashboard" ng-hide="!dashboard">
               <div class="row">
                 <h1> DASHBOARD</h1>
                 <div class="col-md-8">
@@ -77,13 +77,13 @@
         </div>
 
         <!-- Landing ORDER -->
-        <!-- <div class="row" ng-show="order" ng-hide="dashboard">
+        <div class="row" ng-show="orders" ng-hide="!orders">
           <div class="container">
             <div class="row">
-              <p>Order TEst</p>
+              <p>HELLO ESET TEST SETSET </p>
           </div>
         </div>
-      </div> -->
+      </div>
 
 
 
