@@ -1,5 +1,10 @@
 console.log('Sanity Check');
 
+$(document).ready(function(){
+     $('.carousel').carousel();
+   });
+       
+
 angular.module('dinerApp', ['ngRoute', 'ui.materialize'])
        .config(config);
 
@@ -55,6 +60,11 @@ function config (  $routeProvider,   $locationProvider  )  {
     })
     .when('/contact', {
       templateUrl: 'templates/contact.html',
+      // controller: 'RestAddController',
+      // controllerAs: 'restAddCtrl'
+    })
+    .when('/impact', {
+      templateUrl: 'templates/impact.html',
       // controller: 'RestAddController',
       // controllerAs: 'restAddCtrl'
     })
