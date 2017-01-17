@@ -1,44 +1,41 @@
 <div class="navbar-fixed">
-<nav>
-  <div class="nav-wrapper">
-    <a href="/" class="brand-logo">&nbsp;mealMatch</a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="restaurants">Restaurants</a></li>
-      <li><a href="/">Support</a></li>
-      <li><a href="/">Log Out</a></li>
-    </ul>
-  </div>
-</nav>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo">&nbsp;mealMatch</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="restaurants">Restaurants</a></li>
+        <li><a href="/">Support</a></li>
+        <li><a href="/">Log Out</a></li>
+      </ul>
+    </div>
+  </nav>
 </div>
 <br>
 <div class="container">
 
+  <input type="text" class="form-control"  ng-model="searchText" placeholder="Search Restaurants">
+  <div ng-repeat="restaurant in restIndexCtrl.newRestaurant | orderBy: 'name' | filter: searchText" class="row">
 
-<input type="text" class="form-control"  ng-model="searchText" placeholder="Search Restaurants">
-<div ng-repeat="restaurant in restIndexCtrl.newRestaurant | orderBy: 'name' | filter: searchText" class="row">
+  <hr>
+  <div class="container">
+      <div class="col-md-3 col-xs-12 thumbnail">
+        <img class="img-responsive col-m-4" ng-src={{restaurant.image}} alt="Restaurant image">
+      </div>
 
+      <div class="col-md-9 col-xs-12">
+          <ul class="list-group form-inline">
+            <li class="list-group-item">
+              <h5 class="inline-header">Name:</h5>
+              <span> <a ng-href="/restaurants/{{restaurant.name}}">{{restaurant.name}}</span></a>
+              <h5 class="inline-header">description:</h5>
+              <span>{{restaurant.description}}</span>
+              <h5 class="inline-header">url:</h5>
+              <span>{{restaurant.url}}</span>
+              <jk-rating-stars max-rating="8" rating="ctrl.rating" read-only="ctrl.readOnly" on-rating="ctrl.onRating(rating)"></jk-rating-stars>
+            </li>
+          </ul>
+      </div>
 
-
-<hr>
-<div class="container">
-    <div class="col-md-3 col-xs-12 thumbnail">
-      <img class="img-responsive col-m-4" ng-src={{restaurant.image}} alt="Restaurant image">
     </div>
-
-    <div class="col-md-9 col-xs-12">
-        <ul class="list-group form-inline">
-          <li class="list-group-item">
-            <h5 class="inline-header">Name:</h5>
-            <span> <a ng-href="/restaurants/{{restaurant.name}}">{{restaurant.name}}</span></a>
-            <h5 class="inline-header">description:</h5>
-            <span>{{restaurant.description}}</span>
-            <h5 class="inline-header">url:</h5>
-            <span>{{restaurant.url}}</span>
-            <jk-rating-stars max-rating="8" rating="ctrl.rating" read-only="ctrl.readOnly" on-rating="ctrl.onRating(rating)"></jk-rating-stars>
-          </li>
-        </ul>
-    </div>
-
   </div>
-</div>
 </div>

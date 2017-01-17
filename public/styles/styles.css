@@ -56,30 +56,30 @@ p {
 
 /* buttons on home pages*/
 #herobutton {
-    background-color: #8bc34a;
-    margin: 140px -50px;
-    position:relative;
-    top:50%;
-    left:50%;
-    border-radius: 10px;
+  background-color: #8bc34a;
+  margin: 140px -50px;
+  position:relative;
+  top:50%;
+  left:50%;
+  border-radius: 10px;
 }
 
 #herotext1 {
     color: #ff8a65;
-    margin-left: 460px;
-    /*position:relative;
-    top:50%;
-    left:50%;
-    border-radius: 10px;*/
+  margin-left: 460px;
+  /*position:relative;
+  top:50%;
+  left:50%;
+  border-radius: 10px;*/
 }
 
 #herotext2 {
-    color: #eeeeee;
-    margin-right: 400px;
-    /*position:relative;
-    top:50%;
-    left:50%;
-    border-radius: 10px;*/
+  color: #eeeeee;
+  margin-right: 400px;
+  /*position:relative;
+  top:50%;
+  left:50%;
+  border-radius: 10px;*/
 }
 
 /*spaces card from top*/
@@ -96,28 +96,28 @@ p {
 }
 
 #sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 2.2em;
-    color: rgb(220, 220, 220);
-    display: block;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 2.2em;
+  color: rgb(220, 220, 220);
+  display: block;
 }
 
 #sidenav a:hover {
   text-decoration: none;
-    color: black;
-    background-color: #2196f3;
+  color: black;
+  background-color: #2196f3;
 }
 
 /*button inside of rest dashboard*/
 
 #addbutton {
-    background-color: #8bc34a;
-    /*margin: 300px -50px;*/
-    position:relative;
-    /*top:50%;
-    left:50%;*/
-    border-radius: 10px;
+  background-color: #8bc34a;
+  /*margin: 300px -50px;*/
+  position:relative;
+  /*top:50%;
+  left:50%;*/
+  border-radius: 10px;
 }
 
 #dashicon {
@@ -139,4 +139,9 @@ p {
   height: 100px;
   width: 100px;
   position: center;
+}
+
+#impactimg {
+  height: 300px;
+  width: 450px;
 }

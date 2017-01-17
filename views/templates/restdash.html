@@ -9,85 +9,76 @@
   </div>
 </nav>
 
-  <div class="row">
-        <div class="col s11 m4 l2" id="sidenav">
-          <a href="dashboard" ng-click="dashboard = true">Dashboard</a>
-          <a href="#" ng-click="orders = true" >Orders</a>
-          <a href="#">Update</a>
-          <a href="#">Coupons</a>
-          <a href="#">Reports</a>
-          <a href="#">Settings</a>
-          <a href="rest_add">Add</a>
-          <a href="impact">Impact</a>
-          <hr>
-          <h5>&nbsp;&nbsp;Our Partners</h5>
-          <hr>
-          <a href="https://www.sfmfoodbank.org "><img src="images/sfmfb-logo.png" id="foodbank"/></a>
+<div class="row">
+    <div class="col s11 m4 l2" id="sidenav">
+        <a href="dashboard" ng-click="dashboard = true">Dashboard</a>
+        <a href="#" ng-click="orders = true" >Orders</a>
+        <a href="#">Update</a>
+        <a href="#">Coupons</a>
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+        <a href="rest_add">Add</a>
+        <a href="impact">Impact</a>
+        <hr>
+        <h5>&nbsp;&nbsp;Our Partners</h5>
+        <hr>
+        <a href="https://www.sfmfoodbank.org "><img src="images/sfmfb-logo.png" id="foodbank"/></a>
+    </div>
 
+      <div class="col s12 m8 l9">
+        <!-- Landing dashboard. Add a new! -->
+        <div class="row" ng-hide="dashboard || orders">
+          <div class="promotion">
+
+            <div class="col s4">
+              <a href="rest_add"><i class="large material-icons" id="dashicon">toc</i></a>
+              <h4>List</h4>
+                <!-- <h6>Filler content about stuff and things</h6> -->
+            </div>
+            <div class="col s4">
+              <i class="large material-icons" id="dashicon">receipt</i>
+              <h4>Orders</h4>
+              <!-- <h6>Filler content about stuff and things</h6> -->
+            </div>
+            <div class="col s4">
+              <a href="impact"><i class="large material-icons" id="dashicon">loyalty</i></a>
+              <h4>Impact</h4>
+              <!-- <h6>Filler content about stuff and things</h6> -->
+            </div>
+          </div>
         </div>
 
-
-        <div class="col s12 m8 l9">
-          <!-- Landing dashboard. Add a new! -->
-          <div class="row" ng-hide="dashboard || orders">
-            <div class="promotion">
-
-              <div class="col s4">
-                <a href="rest_add"><i class="large material-icons" id="dashicon">toc</i></a>
-                  <h4>List</h4>
-                  <!-- <h6>Filler content about stuff and things</h6> -->
-              </div>
-              <div class="col s4">
-                <i class="large material-icons" id="dashicon">receipt</i>
-                <h4>Orders</h4>
-                <!-- <h6>Filler content about stuff and things</h6> -->
-              </div>
-              <div class="col s4">
-              <a href="impact"><i class="large material-icons" id="dashicon">loyalty</i></a>
-                <h4>Impact</h4>
-                <!-- <h6>Filler content about stuff and things</h6> -->
-              </div>
-
-          </div>
-
-          </div>
-
-          <!-- Landing dashboard. Add a new! -->
-          <div class="row" ng-show="dashboard" ng-hide="!dashboard">
-              <div class="row">
-                <h1> DASHBOARD</h1>
-                <div class="col-md-8">
-                    <h4 class="content-card"> Page Views | Orders | Sales | Earnings </h4>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <p class="content-card"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                      </div>
-                      <div class="col-md-6">
-                        <p class="content-card"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                      </div>
+        <!-- Landing dashboard. Add a new! -->
+        <div class="row" ng-show="dashboard" ng-hide="!dashboard">
+            <div class="row">
+              <h1> DASHBOARD</h1>
+              <div class="col-md-8">
+                  <h4 class="content-card"> Page Views | Orders | Sales | Earnings </h4>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p class="content-card"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    </div>
+                    <div class="col-md-6">
+                      <p class="content-card"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="http://i.imgur.com/KcumF3z.png">
+              </div>
+              <div class="col-md-4">
+                <img src="http://i.imgur.com/KcumF3z.png">
               </div>
               <div class="col-md-12">
-                  <p class="content-card"> Lorem test 12 </p>
-            </div>
-            </div>
-        </div>
-
-        <!-- Landing ORDER -->
-        <div class="row" ng-show="orders" ng-hide="!orders">
-          <div class="container">
-            <div class="row">
-              <p>HELLO ESET TEST SETSET </p>
+                <p class="content-card"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+              </div>
           </div>
-        </div>
       </div>
 
-
-
-
-
+      <!-- Landing ORDER -->
+      <div class="row" ng-show="orders" ng-hide="!orders">
+        <div class="container">
+          <div class="row">
+            <!-- <p>HELLO ESET TEST SETSET </p> -->
+        </div>
+      </div>
+    </div>
   </div>
 </div>

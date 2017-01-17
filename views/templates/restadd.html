@@ -1,58 +1,67 @@
-<h4>RESTAURANT ADD FORM </h4>
+<nav>
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo">&nbsp;mealMatch</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="restaurants">Restaurants</a></li>
+      <li><a href="/">Support</a></li>
+      <li><a href="/">Log Out</a></li>
+    </ul>
+  </div>
+</nav>
 
 <div class="container">
+  <h4>Add your Restaurant </h4>
   <div class="row">
-          <div class="col-md-10 col-md-offset-1">
+      <div class="col-md-10 col-md-offset-1">
 
-            <form class="form-horizontal" ng-submit="restAddCtrl.createRestaurant()">
-              <fieldset>
-
-                <!-- Form Name -->
-                <!-- <legend>Add New Book</legend> -->
-
-                <!-- Text input-->
-                <div class="form-group">
-                  <label class="col-md-4 control-label">Name</label>
-                  <div class="col-md-4">
-                  <input ng-model="restAddCtrl.newRestaurant.name" type="text" class="form-control input-md">
-                  </div>
-                </div>
-
-                <!-- Text input-->
-                <div class="form-group">
-                  <label class="col-md-4 control-label">Description</label>
-                  <div class="col-md-4">
-                  <input ng-model="restAddCtrl.newRestaurant.description" type="text" class="form-control input-md">
-                  </div>
-                </div>
-
-                <!-- Text input-->
-                <div class="form-group">
-                  <label class="col-md-4 control-label">Address</label>
-                  <div class="col-md-4">
-                  <input ng-model="restAddCtrl.newRestaurant.location" type="text" class="form-control input-md">
-                  </div>
-                </div>
-
-                <!-- Textarea -->
-                <div class="form-group">
-                  <label class="col-md-4 control-label">URL</label>
-                  <div class="col-md-4">
-                    <input ng-model="restAddCtrl.newRestaurant.url" type="text" class="form-control input-md">
-                  </div>
-                </div>
+        <form class="form-horizontal" ng-submit="restAddCtrl.createRestaurant()">
+          <fieldset>
 
 
-                <!-- Button -->
-                <!-- <div class="form-group"> -->
-                  <!-- <label class="col-md-4 control-label">Save</label> -->
-                  <div class="col-md-4 col-md-offset-4">
-                    <button ng-href="dashboard" class="btn btn-warning">Submit</button>
+            <div class="form-group">
+              <label class="col-md-4 control-label">Name</label>
+              <div class="col-md-4">
+              <input ng-model="restAddCtrl.newRestaurant.name" type="text" class="form-control input-md">
+              </div>
+            </div>
 
-                  </div>
-                <!-- </div> -->
-              </fieldset>
-            </form>
-          </div>
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label">Description</label>
+              <div class="col-md-4">
+              <input ng-model="restAddCtrl.newRestaurant.description" type="text" class="form-control input-md">
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label">Address</label>
+              <div class="col-md-4">
+              <input ng-model="restAddCtrl.newRestaurant.location" type="text" class="form-control input-md">
+              </div>
+            </div>
+
+            <!-- Textarea -->
+            <div class="form-group">
+              <label class="col-md-4 control-label">URL</label>
+              <div class="col-md-4">
+                <input ng-model="restAddCtrl.newRestaurant.url" type="text" class="form-control input-md">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-md-4 control-label">Menu</label>
+              <div class="col-md-4">
+                <input ng-model="restAddCtrl.newRestaurant.url" type="text" class="form-control input-md">
+              </div>
+            </div>
+          
+              <div class="col-md-4 col-md-offset-4">
+                <button ng-href="dashboard" class="btn btn-warning">Submit</button>
+
+              </div>
+          </fieldset>
+        </form>
       </div>
-    </div>
+  </div>
+</div>
