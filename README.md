@@ -8,7 +8,7 @@
 
 Meal match was created as a simple solution to the problem of restaurant food waste.
 
-While the current version is a simple interactive prototype, the goal of the finished product would be to connect restaurants and users in a grubhub like experience. However when purchasing the user would pay an extra fee to have an additional meal delivered to a local foodbank or homeless shelter.
+While the current version is a simple interactive prototype, the goal of the finished product would be to connect restaurants and users in a grubhub like experience. However when purchasing a meal the user would pay an extra fee to have an additional meal delivered to a local nonprofit, foodbank or homeless shelter.
 
 Feel free to fork / star / watch for your own personal use.
 
