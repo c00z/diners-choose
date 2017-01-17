@@ -18,11 +18,40 @@
           <a href="#">Reports</a>
           <a href="#">Settings</a>
           <a href="rest_add">Add</a>
-          <a href="#">Impact</a>
+          <a href="impact">Impact</a>
           <hr>
           <h5>&nbsp;&nbsp;Our Partners</h5>
           <hr>
           <a href="https://www.sfmfoodbank.org "><img src="images/sfmfb-logo.png" id="foodbank"/></a>
 
         </div>
-      </div>
+
+
+        <div class="col s12 m8 l9">
+          <!-- Landing dashboard. Add a new! -->
+          <div class="row" ng-hide="dashboard || orders">
+            <div class="promotion">
+
+              <div class="col s4">
+                <a href="rest_add"><i class="large material-icons" id="dashicon">grade</i></a>
+                  <h4>Meals</h4>
+                  <h6>You've donated 54 meals!</h6>
+              </div>
+              <div class="col s4">
+                <i class="large material-icons" id="dashicon">supervisor_account</i>
+                <h4>People</h4>
+                <h6>You've helped 65 people</h6>
+              </div>
+              <div class="col s4">
+              <a href="impact"><i class="large material-icons" id="dashicon">loyalty</i></a>
+                <h4>Impact</h4>
+                <!-- <h6>Filler content about stuff and things</h6> -->
+              </div>
+
+          </div>
+
+          </div>
+
+
+  </div>
+</div>
